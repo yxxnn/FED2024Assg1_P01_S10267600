@@ -323,5 +323,79 @@ p {
     }
 
     /* Below-header adjustments */
-    .be
+    .below-header {
+        margin: 10px auto;
+        display: block;
+        text-align: center;
+    }
+
+    .below-header-image {
+        width: 90%; /* Scale image to fit mobile */
+        height: auto;
+    }
+
+    /* Main content adjustments */
+    main {
+        padding: 15px; /* Reduce padding */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller font for the main heading */
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    p {
+        font-size: 14px;
+        padding: 0 5px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    /* Contact section adjustments */
+    .contact-section {
+        width: 100%; /* Full width for mobile */
+        padding: 10px;
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+
+    select, input, textarea, button {
+        width: 100%; /* Full-width inputs and buttons */
+        max-width: 100%;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Menu section adjustments */
+    .menu-section {
+        padding: 5px;
+        margin: 5px 0;
+    }
+
+    .menu-section h2 {
+        font-size: 16px;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    /* About page adjustments */
+    .about-page {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .about-page .text {
+        font-size: 12px;
+    }
 }
