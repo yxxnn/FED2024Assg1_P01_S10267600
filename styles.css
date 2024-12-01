@@ -180,7 +180,9 @@ td {
     color: white;
 }
 
+
 /* Forms (Contact Page) */
+
 .contact-page {
     background: url('images/restaurant.jpg') center center fixed;
     background-size: cover;
@@ -188,27 +190,30 @@ td {
     font-weight: normal;
 }
 
-.contact-section{
-    background-color: #261616 ;
-    opacity: 0.7;
-    letter-spacing: 0px; 
-    border: 2px solid grey;
-    line-height: 1.9;
-;
-}
-
-
-form {
-    margin-top: 30px;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
+.contact-section {
+    background-color: rgba(38, 22, 22, 0.95); 
+    max-width: 1000px;
+    padding: 30px;
     border-radius: 10px;
     display: inline-block;
+    margin-top:55px; 
+}
+select {
+    margin-top: 30px;
+    padding: 5px;
+    max-width: 150px;
+    border-radius: 5px;
+    border: none;;
+}
+form {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 input, textarea, button {
     display: block;
-    width: 90%;
+    width: 400px;
     max-width: 400px;
     margin: 10px auto;
     padding: 10px;
@@ -217,7 +222,7 @@ input, textarea, button {
 }
 
 textarea {
-    height: 100px;
+    height: 200px;
 }
 
 button {
@@ -225,6 +230,7 @@ button {
     color: black;
     font-weight: bold;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 button:hover {
@@ -232,3 +238,11 @@ button:hover {
 }
 
 
+.contact-details {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    line-height: 1PX; 
+    margin-left: 20px; 
+    letter-spacing: 0;
+}
