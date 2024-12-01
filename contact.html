@@ -29,26 +29,25 @@
     <main class="ruda-font" >
         <div class="contact-section"> 
             <h1 class="quattrocento-font">CONTACT US</h1>
-            <p><strong>Email:</strong> info@aldentepizza.com</p>
-            <p><strong>Address:</strong> 123 Pizza Street, Food City</p>    
-            <P>We'd love to hear from you! Feel free to reach out for reservations, inquiries, or feedback.</P>
 
-            <form class="contact-form">
-                <label for="suggestion-type">Suggestion Type:</label>
+            <div class="contact-details">
+                <p><strong>Phone:</strong> 1234 5678</p>
+                <p><strong>Email:</strong> info@aldentepizza.com</p>
+                <p><strong>Address:</strong> 123 Pizza Street, Food City</p>    
+            </div>   
+            <P>We'd love to hear from you! Feel free to reach out for reservations, inquiries, or feedback.</P>
+            <form>
+                <label for="suggestion-type">Suggestion Type: </label>
                 <select id="suggestion-type" name="suggestion-type" required>
                     <option value="website">complaints</option>
                     <option value="pizza-shop">Suggestions</option>
                 </select>
-                
                 <br><br>
-                
                 <input placeholder="Enter your name" name="name" required>
                 <br>
                 <textarea placeholder="Write your message" name="message" required></textarea>
                 <br><br>
                 <button type="submit">Submit</button>
-            
-                
             </form>
         </div>
     </main>
