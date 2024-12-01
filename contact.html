@@ -24,17 +24,28 @@
             </nav>
         </div>
     </header>
-    <main class="ruda-font">
-        <h1 class="quattrocento-font">CONTACT US</h1>
-        <p>Email: info@aldentepizza.com</p>
-        <p>Address: 123 Pizza Street, Food City</p>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
+    <main class="ruda-font" >
+        <div class="contact-section"> 
+            <h1 class="quattrocento-font">CONTACT US</h1>
+            <p>Email: info@aldentepizza.com</p>
+            <p>Address: 123 Pizza Street, Food City</p>
+            <form>
+                <label for="suggestion-type">Suggestion Type:</label>
+                <select id="suggestion-type" name="suggestion-type" required>
+                    <option value="website">complaints</option>
+                    <option value="pizza-shop">Suggestions</option>
+                </select><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            
+                <!-- Dropdown for suggestion category -->
+                
+            </form>
+        </div>
     </main>
 </body>
 </html>
