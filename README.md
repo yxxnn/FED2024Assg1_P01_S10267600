@@ -127,5 +127,5 @@ Bug 2: Some images didn't scale correctly on smaller screens.
 
 
 Credits
-Media: photos were sourced from Pexels, a royalty-free photo website.
-Acknowledgements: I received inspiration for this project from local restaurant websites that use engaging imagery and simple design to attract customers.
+Media: photos were sourced from https://www.figma.com/community/file/966882609323462537 the wooden background and pizza and pexels ,royalty free pictures
+Acknowledgements: I received inspiration from https://www.labottega.sg/about-us 
