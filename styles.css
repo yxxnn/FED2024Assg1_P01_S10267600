@@ -1,277 +1,241 @@
-
-
+/* Font Styles for Ruda and Quattrocento */
 .ruda-font {
-font-family: "Ruda", sans-serif;
-font-weight: normal;
-font-style : normal
-
+    font-family: "Ruda", sans-serif; /* Applies the Ruda font family */
+    font-weight: normal; /* Normal font weight */
+    font-style: normal; /* Ensures the font style is normal */
 } 
 
 .quattrocento-font {
-    font-family: "Quattrocento", serif;
-    font-weight: 700;
-    font-style: normal;
+    font-family: "Quattrocento", serif; /* Applies the Quattrocento font family */
+    font-weight: 700; /* Sets the font weight to bold */
+    font-style: normal; /* Ensures the font style is normal */
 }
 
+/* Body Styling */
 body {
-    margin: 0;
-    font-family: 'Ruda', ;
-    font-size: 20px;
-    background: url('images/wooden-background.png') center center fixed;
-    background-size: cover;
-    color: white;
-    font-weight: normal;
+    margin: 0; /* Removes default margin */
+    font-family: 'Ruda', sans-serif; /* Applies Ruda font family */
+    font-size: 20px; /* Sets the base font size */
+    background: url('images/wooden-background.png') center center fixed; /* Sets a fixed background image */
+    background-size: cover; /* Ensures the background covers the entire page */
+    color: white; /* Sets text color to white */
+    font-weight: normal; /* Sets normal font weight */
 }
 
+/* Header Styling */
 header {
-    position:fixed;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.856);
-    text-align: center;
-    font-weight: normal;
-    z-index: 1000;
+    position: fixed; /* Fixes the header at the top of the page */
+    width: 100%; /* Full width */
+    background-color: rgba(0, 0, 0, 0.856); /* Semi-transparent black background */
+    text-align: center; /* Centers the text */
+    font-weight: normal; /* Normal font weight */
+    z-index: 1000; /* Ensures header stays on top of other elements */
 }
 
+/* Header Content Styling */
 .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Uses Flexbox for layout */
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Vertically aligns items in the center */
 }
 
+/* Logo Styling */
 .logo {
     display: inline-block; 
-    background-image: url('images/wheat.png'); 
-    background-size: 90px 65px  ; 
-    background-repeat: no-repeat;
-    background-position: center; 
-    padding: 30px 20px;
-    height: 30px; 
-    text-align: center; 
+    background-image: url('images/wheat.png'); /* Adds a background image */
+    background-size: 90px 65px; /* Sets the size of the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-position: center; /* Centers the background image */
+    padding: 30px 20px; /* Adds padding around the logo */
+    height: 30px; /* Sets a fixed height */
+    text-align: center; /* Centers the text */
 }
 
 .logo p {
-    margin: 0; 
-    padding: 0; 
-    font-size: 15px; 
-    font-weight: normal; 
-    color: white; 
-    background: none; 
+    margin: 0; /* Removes the default margin */
+    padding: 0; /* Removes the default padding */
+    font-size: 15px; /* Sets the font size */
+    font-weight: normal; /* Normal font weight */
+    color: white; /* White text color */
+    background: none; /* Removes any background */
 }
 
+/* Below-header Image Styling */
 .below-header {
     position: absolute;
-    left: 1262px;
-    margin-top: 10px;
+    left: 1262px; /* Positions the element */
+    margin-top: 10px; /* Adds margin from the top */
 }
 
 .below-header-image {
-    width: 250px; 
-    height: auto; 
-    cursor: pointer;
+    width: 250px; /* Sets the image width */
+    height: auto; /* Adjusts height automatically to maintain aspect ratio */
+    cursor: pointer; /* Changes cursor to pointer when hovering */
 }   
 
-
+/* Navigation Menu Styling */
 nav ul {
-    list-style: none;
+    list-style: none; /* Removes list bullets */
     margin: 0;  
-    padding: 0;
-    display: flex;
+    padding: 0; /* Removes padding */
+    display: flex; /* Uses Flexbox for layout */
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Adds space between list items */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    padding: 5px 10px;
-    transition: background 0.3s;
+    text-decoration: none; /* Removes underlining from links */
+    color: white; /* Sets link color to white */
+    font-size: 16px; /* Sets font size */
+    padding: 5px 10px; /* Adds padding around the links */
+    transition: background 0.3s; /* Adds transition effect on hover */
 }
 
 nav ul li a:hover {
-    background: #444;
+    background: #444; /* Changes background color on hover */
 }
 
+/* Main Content Styling */
 main {
-    padding: 100px ;
-    text-align: center;
+    padding: 100px; /* Adds padding around the main content */
+    text-align: center; /* Centers the text */
 }
 
+/* Heading Styling */
 h1 {
-    font-family: "Quattrocento " ;
-    font-size: 60px;
-    color: #ffffff;
-    padding-right: 35px;
-    font-weight: 1;
-    text-decoration: underline ;
-    text-decoration-color: #F2C94C;
+    font-family: "Quattrocento"; /* Uses Quattrocento font */
+    font-size: 60px; /* Sets the font size */
+    color: #ffffff; /* Sets text color to white */
+    padding-right: 35px; /* Adds padding to the right */
+    font-weight: 1; /* Sets font weight */
+    text-decoration: underline; /* Underlines the text */
+    text-decoration-color: #F2C94C; /* Sets underline color */
 }
 
+/* Paragraph Styling */
 p {
-    font-size: 25px;    
-    line-height: 1.6;
-    letter-spacing: 1.5px;
-    padding: 0 200px;
-    margin-right: 30px;
+    font-size: 25px; /* Sets font size */
+    line-height: 1.6; /* Sets line height */
+    letter-spacing: 1.5px; /* Adds spacing between letters */
+    padding: 0 200px; /* Adds padding to the left and right */
+    margin-right: 30px; /* Adds margin to the right */
     text-shadow: 
-    -1px -1px 0 black,
-    1px -1px 0 black,
-    -1px 1px 0 black,
-    1px 1px 0 black; 
-}
-
-.img-box{
-    position:relative;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    padding: 20px 0; 
-    margin-left: 15px;
-}
-
-img {
-    position: fixed;
-    margin: 0px auto;
-    padding-left: 25px;
-    width: 950px;
-
-}
-
-
-
-/* Tables (Menu Page) */
-.menu-section{
-    background-color: #261616 ;
-    opacity: 0.96;
-    letter-spacing: 0px; 
-    border: 2px solid grey;
-    line-height: 1.9;    
-}
-
-h2 {
-    font-family: "Quattrocento";;
-    font-size: 30px;
-    color: #FFD700;
-    padding-right: 30px;
-    text-shadow: 
-    -1px -1px 0 black,
+    -1px -1px 0 black, /* Creates a shadow effect on text */
     1px -1px 0 black,
     -1px 1px 0 black,
     1px 1px 0 black;
 }
 
+/* Image Styling */
+.img-box {
+    position: relative; /* Positions the element relative to its parent */
+    display: flex; /* Uses Flexbox for layout */
+    justify-content: center; /* Centers the content */
+    align-items: baseline; /* Aligns items to the baseline */
+    padding: 20px 0; /* Adds padding */
+    margin-left: 15px; /* Adds margin to the left */
+}
 
+img {
+    position: fixed; /* Fixes the image in place */
+    margin: 0px auto; /* Centers the image */
+    padding-left: 25px; /* Adds left padding */
+    width: 950px; /* Sets image width */
+}
 
+/* Menu Page Styling */
+.menu-section {
+    background-color: #261616; /* Sets background color */
+    opacity: 0.96; /* Sets opacity */
+    letter-spacing: 0px; /* Removes letter spacing */
+    border: 2px solid grey; /* Adds a border */
+    line-height: 1.9; /* Adjusts line height */
+}
+
+/* Section Heading Styling (Menu) */
+h2 {
+    font-family: "Quattrocento"; /* Uses Quattrocento font */
+    font-size: 30px; /* Sets font size */
+    color: #FFD700; /* Sets text color */
+    padding-right: 30px; /* Adds padding to the right */
+    text-shadow: 
+    -1px -1px 0 black, /* Creates a shadow effect on text */
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+/* Table Styling */
 th, td {
-    padding: 15px;
-    text-align: left;
-    color: #FFD700;
+    padding: 15px; /* Adds padding to table cells */
+    text-align: left; /* Aligns text to the left */
+    color: #FFD700; /* Sets text color */
 }
 
 th {
-    background: #444;
-    font-size: 1.2em;
+    background: #444; /* Sets background color for table headers */
+    font-size: 1.2em; /* Increases font size for table headers */
 }
 
 td {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Sets background color for table data */
+    color: white; /* Sets text color */
 }
 
-
-/* Forms (Contact Page) */
-
+/* Contact Page Styling */
 .restaurant-background-page {
-    background: url('images/restaurant.jpg') center center fixed;
-    background-size: cover;
-    font-weight: normal;
+    background: url('images/restaurant.jpg') center center fixed; /* Sets background image */
+    background-size: cover; /* Ensures the background covers the entire page */
+    font-weight: normal; /* Normal font weight */
 }
 
+/* Contact Section Styling */
 .contact-section {
-    background-color: rgba(38, 22, 22, 0.95); 
-    max-width: 950px;
-    padding: 30px;
-    border-radius: 10px;
-    display: inline-block;
-    margin-top:55px; 
-    margin-left: auto;
+    background-color: rgba(38, 22, 22, 0.95); /* Semi-transparent background */
+    max-width: 950px; /* Sets max width */
+    padding: 30px; /* Adds padding */
+    border-radius: 10px; /* Rounds the corners */
+    display: inline-block; /* Makes the section inline */
+    margin-top: 55px; /* Adds margin from the top */
+    margin-left: auto; /* Centers the section horizontally */
     margin-right: auto;
 }
+
+/* Dropdown Styling */
 select {
-    margin-top: 30px;
-    padding: 5px;
-    max-width: 150px;
-    border-radius: 5px;
-    border: none;;
-}
-form {
-    margin-top: 30px;
-    padding: 20px;
-    border-radius: 10px;
+    margin-top: 30px; /* Adds margin to the top */
+    padding: 5px; /* Adds padding */
+    max-width: 150px; /* Sets maximum width */
+    border-radius: 5px; /* Rounds the corners */
+    border: none; /* Removes border */
 }
 
+/* Form Styling */
+form {
+    margin-top: 30px; /* Adds margin to the top */
+    padding: 20px; /* Adds padding */
+    border-radius: 10px; /* Rounds the corners */
+}
+
+/* Input, Textarea, and Button Styling */
 input, textarea, button {
-    display: block;
-    width: 400px;
-    max-width: 400px;
-    margin: 10px auto;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+    display: block; /* Makes the elements block level */
+    width: 400px; /* Sets width */
+    max-width: 400px; /* Sets maximum width */
+    margin: 10px auto; /* Centers elements */
+    padding: 10px; /* Adds padding */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Rounds the corners */
 }
 
 textarea {
-    height: 200px;
+    height: 200px; /* Sets height for textarea */
 }
 
 button {
-    background: #FFD700;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-button:hover {
-    background: #FFA500;
-}
-
-
-.contact-details {
-    display: flex; 
-    flex-direction: column; 
-    align-items: flex-start; 
-    line-height: 1PX; 
-    margin-left: 20px; 
-    letter-spacing: 0;
-}
-
-
-/* about us Page */
-
-.about-page {
-    background-color: rgba(38, 22, 22, 0.97); 
-    max-width: 1050px;
-    padding: 30px;
-    margin-top: 55px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-h3{
-    font-family: "Ruda";
-    padding-right:30px;
-    font-size: 30px;
-}
-
-p{
-    font-size: 22px;
-}
-.about-page .text {
-    font-size: 10px;
-    font-weight: 1;
-    color: white;
-}   
+    background: #FFD700; /* Sets background color */
+    color: black; /* Sets text color */
+    font-weight: bold; /* Makes button text bold */
+   
