@@ -71,36 +71,21 @@
             </form>
         </div>
     </main>
-    <form id="feedbackForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-    
-        <label for="feedback">Feedback:</label>
-        <textarea id="feedback" name="feedback" required></textarea>
-    
-        <button type="submit">Submit</button>
-    </form>
-    
-    <div id="thankYouMessage" style="display: none; color: green; margin-top: 20px;">
-        Thank you for the feedback!
-    </div>
-    <script>
-        // Get the form and the thank-you message element
+     <!-- JavaScript for Alert -->
+     <script>
+        // Get the form element
         const form = document.getElementById('feedbackForm');
-        const thankYouMessage = document.getElementById('thankYouMessage');
-    
+
         // Add event listener for form submission
         form.addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the default form submission
-    
-            // Show the thank-you message
-            thankYouMessage.style.display = 'block';
-    
+
+            // Display a thank-you message using an alert
+            alert("Thank you for the feedback!");
+
             // Optionally clear the form fields
             form.reset();
         });
     </script>
-    
-    
 </body>
 </html>
