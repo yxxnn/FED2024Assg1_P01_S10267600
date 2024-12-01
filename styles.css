@@ -282,27 +282,30 @@ p {
 
     /* Header adjustments */
     header {
-        align-items: center;
-        padding: 5px; /* Reduce padding */
+        padding: 10px; /* Add space inside header */
         height: auto;
-        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+        background-color: rgba(0, 0, 0, 0.9); /* Adjust background color for better contrast */
     }
 
     .header-content {
-        padding-top :10px;
-        flex-direction: column;
+        flex-direction: column; /* Stack header content vertically */
+        justify-content: center;
+        align-items: center; /* Center-align content */
+        padding-top: 10px;
     }
 
     .logo {
         padding: 5px;
         background-size: 50px 35px; /* Adjust logo size */
-        height: 50px;
+        height: auto;
+        text-align: center;
     }
 
     .logo p {
         font-size: 12px; /* Smaller font size for logo text */
     }
 
+    /* Navigation adjustments */
     nav ul {
         flex-direction: column;
         align-items: center; /* Center-align menu items */
@@ -311,87 +314,14 @@ p {
     }
 
     nav ul li {
-        margin: 3px 0; /* Reduce spacing between menu items */
+        margin: 5px 0; /* Reduced spacing between menu items */
     }
 
     nav ul li a {
-        font-size: 12px; /* Smaller font size for menu links */
+        font-size: 14px; /* Smaller font size for menu links */
         padding: 5px 8px; /* Adjust padding for compact spacing */
     }
 
     /* Below-header adjustments */
-    .below-header {
-        margin: 5px auto;
-        display: block;
-        text-align: center;
-    }
-
-    .below-header-image {
-        width: 90%; /* Scale image to fit mobile */
-        height: auto;
-    }
-
-    /* Main content adjustments */
-    main {
-        padding: 15px; /* Reduce padding */
-    }
-
-    h1 {
-        font-size: 24px; /* Smaller font for the main heading */
-        text-align: center;
-        padding: 5px 0;
-    }
-
-    p {
-        font-size: 14px;
-        padding: 0 5px;
-        line-height: 1.4;
-    }
-
-    /* Contact section adjustments */
-    .contact-section {
-        width: 100%; /* Full width for mobile */
-        padding: 10px;
-        margin: 10px auto;
-        border-radius: 5px;
-    }
-
-    select, input, textarea, button {
-        width: 100%; /* Full-width inputs and buttons */
-        max-width: 100%;
-    }
-
-    button {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    /* Menu section adjustments */
-    .menu-section {
-        padding: 5px;
-        margin: 5px 0;
-    }
-
-    .menu-section h2 {
-        font-size: 16px;
-    }
-
-    th, td {
-        font-size: 12px;
-        padding: 6px;
-    }
-
-    /* About page adjustments */
-    .about-page {
-        padding: 10px;
-        margin: 10px auto;
-    }
-
-    h3 {
-        font-size: 16px;
-    }
-
-    .about-page .text {
-        font-size: 12px;
-    }
+    .be
 }
