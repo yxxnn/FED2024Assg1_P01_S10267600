@@ -271,106 +271,122 @@ p {
     color: white;
 }
 
+/* Media Queries for screens up to 476px wide */
 @media only screen and (max-width: 476px) {
-    /* Header adjustments for mobile */
+    /* General adjustments */
+    body {
+        font-size: 16px; /* Reduce font size for readability */
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Header adjustments */
     header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.9); /* Dark background for contrast */
-        z-index: 1000;
-        padding: 5px 10px; /* Reduced padding for a smaller header */
-        display: flex; /* Horizontal alignment */
-        justify-content: space-between; /* Space between logo and navigation */
-        align-items: center; /* Vertically align items */
-        height: auto; /* Allow header to adapt dynamically */
+        display: flex;
+        flex-direction: column; /* Stack logo and navigation */
+        align-items: center;
+        padding: 10px;
+        height: auto;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .logo {
+        padding: 10px;
+        background-size: 60px 45px; /* Adjust logo size */
     }
 
     nav ul {
-        flex-direction: column; /* Stack navigation items vertically */
-        margin-top: 10px;
+        flex-direction: column;
+        align-items: center; /* Center-align menu items */
+        margin: 0;
+        padding: 0;
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
     nav ul li a {
-        font-size: 14px; /* Smaller text for links */
-        padding: 8px;
+        font-size: 14px;
+        padding: 8px 12px;
     }
 
+    /* Below-header adjustments */
     .below-header {
-        position: relative;
-        margin-top: 20px;
-        left: auto;
-        right: auto;
+        margin: 10px auto;
         display: block;
-    }
-
-    .below-header-image {
-        width: 200px; /* Adjust image size */
-    }
-
-    /* Main Content Adjustments */
-    main {
-        padding: 80px 20px; /* Reduced padding */
         text-align: center;
     }
 
+    .below-header-image {
+        width: 80%; /* Scale image to fit mobile */
+        height: auto;
+    }
+
+    /* Main content adjustments */
+    main {
+        padding: 20px;
+    }
+
     h1 {
-        font-size: 35px; /* Smaller heading */
-        padding-right: 0;
-        text-decoration-color: #F2C94C;
+        font-size: 30px;
+        text-align: center;
+        padding: 10px 0;
     }
 
     p {
-        font-size: 18px; /* Adjusted paragraph text size */
+        font-size: 14px;
         padding: 0 10px;
+        line-height: 1.5;
     }
 
-    /* Contact Section Adjustments */
+    /* Contact section adjustments */
     .contact-section {
-        padding: 20px;
-        margin-top: 20px;
-        max-width: 100%;
+        width: 100%; /* Full width for mobile */
+        padding: 15px;
+        margin: 10px auto;
+        border-radius: 5px;
     }
 
     select, input, textarea, button {
-        width: 100%; /* Full-width inputs for better mobile usability */
+        width: 100%; /* Full-width inputs and buttons */
         max-width: 100%;
     }
 
-    /* Menu Section Styling Adjustments */
+    button {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Menu section adjustments */
     .menu-section {
         padding: 10px;
+        margin: 10px 0;
     }
 
     .menu-section h2 {
-        font-size: 20px; /* Smaller menu section heading */
+        font-size: 18px;
     }
 
     th, td {
-        font-size: 14px; /* Adjust font size for smaller tables */
-        padding: 10px;
+        font-size: 12px;
+        padding: 8px;
     }
 
-    /* About Us Section Adjustments */
+    /* About page adjustments */
     .about-page {
-        padding: 20px;
-        margin-top: 20px;
+        padding: 15px;
+        margin: 10px auto;
     }
 
-    .about-page h3 {
-        font-size: 24px; /* Smaller heading */
-    }
-
-    .about-page p {
-        font-size: 18px; /* Smaller paragraph text */
+    h3 {
+        font-size: 18px;
     }
 
     .about-page .text {
-        font-size: 12px; /* Adjusted font size */
+        font-size: 14px;
     }
 }
