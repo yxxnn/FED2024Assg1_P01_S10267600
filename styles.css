@@ -281,21 +281,21 @@ p {
     /* Header Styling */
     header {
         position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.856);
-        text-align: center;
-        font-weight: normal;
         z-index: 1000;
-        padding: 10px 0; /* Compact padding for smaller screens */
+        padding: 5px 10px; /* Compact padding for mobile */
     }
 
+    /* Flexbox alignment for header content */
     .header-content {
-        display: flex;
-        justify-content: space-between; /* Horizontal alignment with space */
-        align-items: center; /* Center elements vertically */
-        padding: 0 10px;
+        display: flex; /* Enable flexbox */
+        flex-direction: row; /* Ensure horizontal alignment */
+        justify-content: space-between; /* Space between logo and nav menu */
+        align-items: center; /* Center vertically */
     }
-
 
     .logo {
         padding: 10px;
