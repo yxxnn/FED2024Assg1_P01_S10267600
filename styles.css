@@ -272,123 +272,73 @@ p {
 }
 
 @media only screen and (max-width: 476px) {
-    /* General body adjustments for small screens */
-    body {
-        font-size: 16px; /* Adjusted font size for smaller screens */
-        background-size: cover;
-    }
-
-    /* Header Styling */
+    /* Header adjustments for mobile */
     header {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.856);
+        background-color: rgba(0, 0, 0, 0.9); /* Dark background for contrast */
         z-index: 1000;
-        padding: 5px 10px; /* Reduce padding for a smaller header height */
-        height: 50px; /* Set a fixed height for the header */
+        padding: 5px 10px; /* Reduced padding for a smaller header */
+        display: flex; /* Horizontal alignment */
+        justify-content: space-between; /* Space between logo and navigation */
+        align-items: center; /* Vertically align items */
+        height: auto; /* Allow header to adapt dynamically */
     }
 
-    /* Header content (flexbox layout) */
-    .header-content {
-        display: flex; /* Enable flexbox for alignment */
-        flex-direction: row; /* Horizontal alignment */
-        justify-content: space-between; /* Space between logo and nav menu */
-        align-items: center; /* Center items vertically */
-    }
-
-
+    /* Logo styling for mobile */
     .logo {
-        padding: 10px;
-        height: 50px;
-        background-size: 70px 50px; /* Adjust logo size */
+        display: flex;
+        align-items: center;
+        background-size: 25px 20px; /* Small background for the logo */
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding: 5px; /* Reduced padding for compact layout */
     }
 
+    .logo p {
+        font-size: 14px; /* Smaller logo text */
+        margin: 0;
+        padding-left: 35px; /* Space for the background image */
+    }
+
+    /* Navigation menu styling */
     nav ul {
-        flex-direction: column; /* Stack navigation items vertically */
-        margin-top: 10px;
+        display: flex; /* Ensure horizontal layout */
+        flex-direction: row; /* Align items in a row */
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        gap: 10px; /* Space between navigation items */
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 0; /* Remove extra margins */
     }
 
     nav ul li a {
-        font-size: 14px; /* Smaller text for links */
-        padding: 8px;
+        text-decoration: none;
+        color: white;
+        font-size: 12px; /* Smaller font size for mobile */
+        padding: 5px 10px; /* Compact padding */
     }
 
+    /* Hover effect */
+    nav ul li a:hover {
+        background: #444;
+        border-radius: 3px;
+    }
+
+    /* Adjust spacing below header */
     .below-header {
-        position: relative;
-        margin-top: 20px;
-        left: auto;
-        right: auto;
-        display: block;
-    }
-
-    .below-header-image {
-        width: 200px; /* Adjust image size */
-    }
-
-    /* Main Content Adjustments */
-    main {
-        padding: 80px 20px; /* Reduced padding */
+        margin-top: 50px; /* Push content down below header */
         text-align: center;
     }
 
-    h1 {
-        font-size: 35px; /* Smaller heading */
-        padding-right: 0;
-        text-decoration-color: #F2C94C;
-    }
-
-    p {
-        font-size: 18px; /* Adjusted paragraph text size */
-        padding: 0 10px;
-    }
-
-    /* Contact Section Adjustments */
-    .contact-section {
-        padding: 20px;
-        margin-top: 20px;
-        max-width: 100%;
-    }
-
-    select, input, textarea, button {
-        width: 100%; /* Full-width inputs for better mobile usability */
-        max-width: 100%;
-    }
-
-    /* Menu Section Styling Adjustments */
-    .menu-section {
-        padding: 10px;
-    }
-
-    .menu-section h2 {
-        font-size: 20px; /* Smaller menu section heading */
-    }
-
-    th, td {
-        font-size: 14px; /* Adjust font size for smaller tables */
-        padding: 10px;
-    }
-
-    /* About Us Section Adjustments */
-    .about-page {
-        padding: 20px;
-        margin-top: 20px;
-    }
-
-    .about-page h3 {
-        font-size: 24px; /* Smaller heading */
-    }
-
-    .about-page p {
-        font-size: 18px; /* Smaller paragraph text */
-    }
-
-    .about-page .text {
-        font-size: 12px; /* Adjusted font size */
+    .below-header-image {
+        width: 90%; /* Scale the image for mobile */
+        max-width: 200px;
+        height: auto;
     }
 }
