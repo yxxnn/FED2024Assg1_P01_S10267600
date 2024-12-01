@@ -282,8 +282,6 @@ p {
 
     /* Header adjustments */
     header {
-        display: flex;
-        flex-direction: column; /* Stack logo and navigation */
         align-items: center;
         padding: 5px; /* Reduce padding */
         height: auto;
