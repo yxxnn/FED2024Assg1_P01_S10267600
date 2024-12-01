@@ -286,16 +286,18 @@ p {
         width: 100%;
         background-color: rgba(0, 0, 0, 0.856);
         z-index: 1000;
-        padding: 5px 10px; /* Compact padding for mobile */
+        padding: 5px 10px; /* Reduce padding for a smaller header height */
+        height: 50px; /* Set a fixed height for the header */
     }
 
-    /* Flexbox alignment for header content */
+    /* Header content (flexbox layout) */
     .header-content {
-        display: flex; /* Enable flexbox */
-        flex-direction: row; /* Ensure horizontal alignment */
+        display: flex; /* Enable flexbox for alignment */
+        flex-direction: row; /* Horizontal alignment */
         justify-content: space-between; /* Space between logo and nav menu */
-        align-items: center; /* Center vertically */
+        align-items: center; /* Center items vertically */
     }
+
 
     .logo {
         padding: 10px;
