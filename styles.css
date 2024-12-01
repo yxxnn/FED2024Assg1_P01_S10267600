@@ -285,8 +285,9 @@ p {
         display: flex;
         flex-direction: column; /* Stack logo and navigation */
         align-items: center;
-        padding: 10px;
+        padding: 5px; /* Reduce padding */
         height: auto;
+        background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
     }
 
     .header-content {
@@ -294,8 +295,13 @@ p {
     }
 
     .logo {
-        padding: 10px;
-        background-size: 60px 45px; /* Adjust logo size */
+        padding: 5px;
+        background-size: 50px 35px; /* Adjust logo size */
+        height: 50px;
+    }
+
+    .logo p {
+        font-size: 12px; /* Smaller font size for logo text */
     }
 
     nav ul {
@@ -306,47 +312,47 @@ p {
     }
 
     nav ul li {
-        margin: 5px 0;
+        margin: 3px 0; /* Reduce spacing between menu items */
     }
 
     nav ul li a {
-        font-size: 14px;
-        padding: 8px 12px;
+        font-size: 12px; /* Smaller font size for menu links */
+        padding: 5px 8px; /* Adjust padding for compact spacing */
     }
 
     /* Below-header adjustments */
     .below-header {
-        margin: 10px auto;
+        margin: 5px auto;
         display: block;
         text-align: center;
     }
 
     .below-header-image {
-        width: 80%; /* Scale image to fit mobile */
+        width: 90%; /* Scale image to fit mobile */
         height: auto;
     }
 
     /* Main content adjustments */
     main {
-        padding: 20px;
+        padding: 15px; /* Reduce padding */
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 24px; /* Smaller font for the main heading */
         text-align: center;
-        padding: 10px 0;
+        padding: 5px 0;
     }
 
     p {
         font-size: 14px;
-        padding: 0 10px;
-        line-height: 1.5;
+        padding: 0 5px;
+        line-height: 1.4;
     }
 
     /* Contact section adjustments */
     .contact-section {
         width: 100%; /* Full width for mobile */
-        padding: 15px;
+        padding: 10px;
         margin: 10px auto;
         border-radius: 5px;
     }
@@ -358,35 +364,35 @@ p {
 
     button {
         padding: 10px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     /* Menu section adjustments */
     .menu-section {
-        padding: 10px;
-        margin: 10px 0;
+        padding: 5px;
+        margin: 5px 0;
     }
 
     .menu-section h2 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     th, td {
         font-size: 12px;
-        padding: 8px;
+        padding: 6px;
     }
 
     /* About page adjustments */
     .about-page {
-        padding: 15px;
+        padding: 10px;
         margin: 10px auto;
     }
 
     h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .about-page .text {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
