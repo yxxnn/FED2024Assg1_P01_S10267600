@@ -181,6 +181,12 @@ td {
 }
 
 /* Forms (Contact Page) */
+.contact-page {
+    background: url('images/restaurant.jpg') center center fixed;
+    background-size: cover;
+    font-weight: normal;
+}
+
 form {
     margin-top: 30px;
     background: rgba(0, 0, 0, 0.7);
